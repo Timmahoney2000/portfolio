@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0" />
+</head>
+<body>
+    
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+               <!--<img src="images/logo.png" class="logo">-->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <img src="images/seattle.jpg" class="seattle"> 
+           
+            <div class="header-text">
+               
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Tim</span><br> Mahoney from New Jersey</h1>
+            </div>
+        </div>
+    </div>
+
+        <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/disney.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Tim Mahoney. You're next software engineer. 
+
+                        As a software engineer I love the fact that I have the ability to bring creativity & functionality to life on the web. I've worked on a wide variety of projects, ranging from building interactive user interfaces, to creating complex web applications and games. My skills allow me to work with an extensive range of technologies, helping me to stay ahead of the latest software trends. I look forward to speaking with you.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Software Engineer</span><br>Creating Full Stack Applications</li>
+                                <li><span>API</span><br>Creating API's</li>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Dec 2022 - Current</span><br>Full Stack Developer at 100Devs</li>
+                                <li><span>Dec 2021 - Current</span><br>Field Engineer at Unisys</li>
+                                <li><span>June 2019 - July 2020</span><br>IT technician</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020</span><br>Associate Degree in Computer Science</li>
+                             <!--   <li><span>API</span><br>Creating API's</li>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li> -->
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i><span class="material-symbols-outlined">
+                        terminal
+                        </span></i>
+                    <h2>Software Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad labore debitis repellat placeat natus dignissimos tenetur dolore voluptate adipisci eligendi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i><span class="material-symbols-outlined">
+                        keyboard_command_key
+                        </span></i>
+                    <h2><UI/UX>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad labore debitis repellat placeat natus dignissimos tenetur dolore voluptate adipisci eligendi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i><span class="material-symbols-outlined">
+                        install_desktop
+                        </span></span></i>
+                    <h2>IT Helpdesk</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad labore debitis repellat placeat natus dignissimos tenetur dolore voluptate adipisci eligendi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/study.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Retrieve the weather of any city with OpenWeather API Use zip code or city name to get temperature in Farenheit, brief description, humidity level, and wind speed</p>
+                        <a href="https://timmahoney2000.github.io/weather_app/">Weather</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dark.jpg">
+                    <div class="layer">
+                        <h3>Super Breakout</h3>
+                        <p>Classic arcade block breaker game created with JavaScript. Fun to build, fun to play, and evokes big nostalgia feels from my youth</p>
+                        <a href="https://timmahoney2000.github.io/JS-Arkanoid/">Super Breakout</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/night.jpg">
+                    <div class="layer">
+                        <h3>Dark Mode</h3>
+                        <p>JavaScript code snippet that can be added into any code base to add a toggle to switch between light mode and dark mode</p>
+                        <a href="https://timmahoney2000.github.io/dark_mode/">Dark Mode</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>timmahoney2000@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>(908)397-8825</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/timmahoney2000"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/finnegansdad1/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/timmahoney77/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@timmahoney2000"><i class="fab fa-medium"></i></a>
+                    </div>
+                    <a href="images/Tim Mahoney- resume.pdf" download class="btn btn2" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Tim Mahoney</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbytM8dYEtRvkRb5Dd1iyEzqDGje1e23306iiI2CvDXAIECtrhabzZ6iuQM3LKOIZeOrEg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
