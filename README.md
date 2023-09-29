@@ -1,1 +1,1 @@
-Tim Mahoney modern portfolio connecting my experience, skills, projects, and contact info
+Tim Mahoney modern portfolio connecting my experience, skills, projects, and contact info.
